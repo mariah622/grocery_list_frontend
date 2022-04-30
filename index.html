@@ -12,8 +12,28 @@
     <!-- <nav>dsafsdf</nav> -->
     <h1>My Grocery List</h1>
 
-    <div id='item-form'></div>
-    <div id='items'></div>
+    <div id='item-form'>
+        <form >
+            <label for='item-name'>Name:</label>
+            <input type ='text' name='name' id='item-name'>
+            <br>
+            <label for='item-color'>Color:</label>
+            <input type ='text' name='color' id='item-color'>
+            <br>
+            <label for='item-price'>Price:</label>
+            <input type='number' name='price' id='item-price' min=0>
+            <br>
+            <label for='item-description'>Description:</label>
+            <input type ='text' name='description' id='item-description'>
+            <br>
+            <select name='category_id' id='category_dropdown'>
+            <input type='submit' value='Create Item'>
+        
+          
+
+        </form>
+    </div>
+    <div id='item-cont'></div>
 
 
     <!-- <script src="src/category.js"></script> -->

@@ -12,6 +12,7 @@ class Item {
         this.element = document.createElement('li')
         this.element.dataset['id'] = id
         this.element.id = `item-${id}`
+        this.element.addEventListener('click', this.handleClick)
         Item.all.push(this)
         // debugger
     } 
@@ -22,14 +23,22 @@ class Item {
             <h2 class="name">${this.name}</h2>
             <p class="color">${this.color}</p>
             <p class="price">$${this.price}</p>
-            <p></p>
             <p class="description">${this.description}</p>
-        
-        </div>
+            </div>
+            <button class='delete' data-id=${this.id}>X</button
         `
 
         return this.element
        
+
+    }
+
+    handleClick(e){
+        console.log('i have been clicked')
+        // if button is clicked, we want to delete grocery item
+        if(e.target.innerHTML === "X"){
+            itemCall.deleteItem(e)
+        }
 
     }
 
@@ -39,6 +48,5 @@ class Item {
 
     attachToDom(){
         Item.cont.appendChild(this.render())
-        // debugger
     }
 }

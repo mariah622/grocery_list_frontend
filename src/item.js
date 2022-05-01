@@ -23,11 +23,10 @@ class Item {
             <h2 class="name">${this.name}</h2>
             <p class="color">${this.color}</p>
             <p class="price" name='number'>Unit Price: $${this.price}</p>
+            <input class="quantity-input" type="number" value="1" min="0">
             <p class="description">${this.description}</p>
             <button class='delete' data-id=${this.id}>X</button>
             <hr>
-
-
         `
 
         return this.element

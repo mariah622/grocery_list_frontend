@@ -10,11 +10,10 @@ body {
 }
 
 h1 {
-    text-align: center;
+  
     font-weight: bold;
-    background: #000000 url('groceries.jpg') no-repeat;
-
-    border: 5px solid gray;
+    text-align: center;
+    border: 5px solid rgb(237, 105, 105);
     color: white
     
 
@@ -74,6 +73,20 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+    background-color: goldenrod;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input[type=reset] {
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    font-family: monospace;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type=reset]:hover {
     background-color: goldenrod;
     box-shadow: 0 5px #666;
     transform: translateY(4px);

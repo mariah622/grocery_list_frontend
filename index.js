@@ -12,9 +12,6 @@ const priceValue = document.getElementById('item-price')
 const descriptionValue = document.getElementById('item-description')
 const categoryNameValue = document.getElementById('category-name')
 
-
-
-
 itemCall.getItems();
 categoryCall.getCategories();
 
@@ -24,6 +21,7 @@ categoryForm.addEventListener('submit', handleCategorySubmit)
 function handleItemSubmit(e){
     e.preventDefault()
     itemCall.createItem()
+
  
 
 }
@@ -33,4 +31,6 @@ function handleCategorySubmit(e){
     categoryCall.createCategory()
     
 }
+
+
  

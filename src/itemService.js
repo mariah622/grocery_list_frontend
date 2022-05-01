@@ -15,7 +15,7 @@ class ItemService{
 
 
         })
-        .catch()
+
     }
 
     createItem(){
@@ -46,9 +46,12 @@ class ItemService{
         .then(resp => resp.json())
         .then(data => {
             const i = new Item(data.data.attributes)
-            i.attachToDom()
-            
+            i.attachToDom() 
         })
+        .catch(error => alert(error))
+        .catch()
+
+        
 
     }
 

@@ -17,4 +17,31 @@ class CategoryService {
         })
         // .catch()
     }
+
+    createCategory(){
+  
+        const categoryInfo = {
+            name: categoryNameValue.value,
+        }
+
+        const configObject = {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify(categoryInfo)
+        }
+
+        
+        fetch(this.port + '/categories', configObject)
+        .then(resp => resp.json())
+        .then(data => {
+            const c = new Category(data.data.attributes)
+            c.addToDropDown()
+            
+            
+        })
+    }
+
 }

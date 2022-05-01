@@ -22,10 +22,12 @@ class Item {
         <div data-id="${this.id}">
             <h2 class="name">${this.name}</h2>
             <p class="color">${this.color}</p>
-            <p class="price">$${this.price}</p>
+            <p class="price" name='number'>Unit Price: $${this.price}</p>
             <p class="description">${this.description}</p>
-            </div>
-            <button class='delete' data-id=${this.id}>X</button
+            <button class='delete' data-id=${this.id}>X</button>
+            <hr>
+
+
         `
 
         return this.element
@@ -34,17 +36,13 @@ class Item {
     }
 
     handleClick(e){
-        console.log('i have been clicked')
+        // console.log('i have been clicked')
         // if button is clicked, we want to delete grocery item
         if(e.target.innerHTML === "X"){
             itemCall.deleteItem(e)
-        }
+        } 
 
     }
-
-   
-
-
 
     attachToDom(){
         Item.cont.appendChild(this.render())

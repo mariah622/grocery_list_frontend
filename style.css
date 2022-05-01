@@ -3,23 +3,87 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white
     
     
 }
 
 h1 {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: #000000 url('groceries.jpg') no-repeat;
+
     border: 5px solid gray;
     color: white
     
 
 }
 
+button {
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    font-family: monospace;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover {
+    background-color: goldenrod;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
 #item-form {
+    background: rgb(255, 95, 95);;
+    background-clip: padding-box;
+    border: 10px solid hsla(0,0%,100%,.5);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
     color: white
+    
 }
 
 #item-cont{
+    background: rgb(255, 95, 95);;
+    background-clip: padding-box;
+    border: 10px solid hsla(0,0%,100%,.5);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
     color:white
+}
+
+#category-form{
+    background: rgb(255, 95, 95);;
+    background-clip: padding-box;
+    border: 10px solid hsla(0,0%,100%,.5);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color:white
+}
+
+input[type=submit] {
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    font-family: monospace;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: goldenrod;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+li{
+    list-style-type: none;
+
+}
+
+hr{
+    border-top: 3px double #e47b7b;
 }
